@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
     <body>
         <header>
             <h1>THE CODE REVIEW</h1>
         </header>
         <main class="container">
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
+            <div class="sub-heading">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
             <form action="index.html" method="post">
-                <fieldset class="contact-info">
+                <div class="contact-info">
                     <h3>Contact  Information</h3>
                     <p class="name-input">
                         <label for="name">
                             Full Name
-                        </label>
+                        </label><br>
                         <input 
                             type="text" 
                             id="name" 
@@ -35,7 +37,7 @@
                     <p class="email-input">
                         <label for="email">
                             Email Address
-                        </label>
+                        </label><br>
                         <input 
                             type="email" 
                             id="email" 
@@ -46,25 +48,25 @@
                     <p class="phone-input">
                         <label for="phone">
                             Phone Number
-                        </label>
+                        </label><br>
                         <input type="number" id="phone" name="user_phone"> 
                     </p>
                     <p class="street-address">
                         <label for="address">
                             Street Address
-                        </label>
+                        </label><br>
                         <input type="text" id="address" name="user_address">
                     </p>
                     <p class="city">
                         <label for="city">
                             City
-                        </label>
+                        </label><br>
                         <input type="text" id="city" name="user_city">
                     </p>
                     <p class="state">
                         <label for="state">
                             State
-                        </label>
+                        </label><br>
                         <select id="state" name="user_state">
                             <option value="Alabama">AL</option>
                             <option value="Alaska">AK</option>
@@ -127,11 +129,11 @@
                     <p class="zipcode">
                         <label for="zipcode">
                             Zip
-                        </label>
-                        <input type="number" id="zipcode" name="user_zip">
+                        </label><br>
+                        <input type="number" id="zipcode" name="user_zip" class="zip">
                     </p>
-                </fieldset>
-                <fieldset class="newsletter">
+                </div>
+                <div class="newsletter">
                     <h3>Newsletter</h3>
                     <label>Select the newsletters you would like to receive</label>
                     <p>
@@ -155,7 +157,7 @@
                         <textarea name="topics" id="topics" cols="30" rows="5"></textarea>
                     </p>
                     
-                </fieldset>
+                </div>
             </form>
             <p>
                 <button type="button">Sign Up</button>

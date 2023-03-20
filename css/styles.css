@@ -2,3 +2,72 @@
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    
+}
+
+header,
+.sub-heading {
+    text-align: center;
+}
+
+header {
+    background-color: #A8DADC;
+    padding: 2em;
+    font-size: .65em;
+
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1em;
+}
+.sub-heading {
+    padding: 1.15em;
+    border-bottom: .25em solid #000;
+    margin-bottom: .25em;
+}
+.sub-heading h2 {
+    font-size: 1.25rem;
+}
+.sub-heading p {
+    font-weight: 100;
+}
+
+.contact-info {
+    border-top: .125em solid #000;
+    border-bottom: .125em solid #000;
+    padding: 1.5em 0;
+}
+.contact-info p > label {
+    display: block;
+}
+.contact-info p > input,
+.contact-info p > select {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    border: 0;
+    border-radius: 5px;
+    background-color: #F1FAEE;
+}
+p > input.zip {
+    width: 50%;
+}
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding: .25em;
+    margin: .25em;
+}
