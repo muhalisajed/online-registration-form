@@ -7,7 +7,6 @@
 ::before,
 ::after {
     box-sizing: inherit;
-    
 }
 
 header,
@@ -44,7 +43,7 @@ h3 {
 .sub-heading p {
     font-weight: 100;
 }
-
+/* Contact Information */
 .contact-info {
     border-top: .125em solid #000;
     border-bottom: .125em solid #000;
@@ -70,4 +69,13 @@ p > input.zip {
     font-style: italic;
     padding: .25em;
     margin: .25em;
+}
+/* Newsletter */
+.newsletter h3 {
+    margin: 1em 0;
+}
+
+/* DRY Classes */
+.radio-checkbox {
+    margin-left: .75em;
 }
