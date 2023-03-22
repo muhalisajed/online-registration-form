@@ -75,6 +75,21 @@ p > input.zip {
     margin: 1em 0;
 }
 
+textarea {
+    margin: 1em 0;
+    background-color: #F1FAEE;
+    border-radius: .25em;
+    width: 100%;
+    border-style: none;
+}
+/* Button */
+button {
+    background-color: #A8DADC;
+    padding: 1.5em 8em;
+    border: none;
+    border-radius: .25em;
+    color: white;
+}
 /* DRY Classes */
 .radio-checkbox {
     margin-left: .75em;
