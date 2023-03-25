@@ -23,51 +23,54 @@
             <form action="index.html" method="post">
                 <div class="contact-info">
                     <h3>Contact  Information</h3>
-                    <p class="name-input">
+                    <p class="contact-input flex">
                         <label for="name">
                             Full Name
-                        </label><br>
+                        </label>
                         <input 
+                            class="contact-input focus"
                             type="text" 
                             id="name" 
                             name="user_name"
-                            required="true"
+                            required
                             placeholder="Required">
                     </p>
-                    <p class="email-input">
+                    <p class="contact-input flex">
                         <label for="email">
                             Email Address
-                        </label><br>
+                        </label>
                         <input 
+                            class="contact-input"
                             type="email" 
                             id="email" 
                             name="user_email" 
-                            required="true"
+                            required
                             placeholder="Required">
                     </p>
-                    <p class="phone-input">
+                    <p class="contact-input flex">
                         <label for="phone">
                             Phone Number
-                        </label><br>
-                        <input type="number" id="phone" name="user_phone"> 
+                        </label>
+                        <input class="contact-input placeholder" type="number" id="phone" name="user_phone" placeholder="Enter your contact number"> 
                     </p>
-                    <p class="street-address">
+                    <p class="contact-input flex">
                         <label for="address">
                             Street Address
-                        </label><br>
-                        <input type="text" id="address" name="user_address">
+                        </label>
+                        <input class="contact-input placeholder" type="text" id="address" name="user_address" placeholder="Enter your address">
                     </p>
-                    <p class="city">
+                    <p class="contact-input flex">
                         <label for="city">
                             City
-                        </label><br>
-                        <input type="text" id="city" name="user_city">
+                        </label>
+                        <input class="contact-input placeholder" type="text" id="city" name="user_city" placeholder="Enter your city">
                     </p>
-                    <p class="state">
+                    <p class=" flex">
                         <label for="state">
                             State
-                        </label><br>
-                        <select id="state" name="user_state">
+                        </label>
+                        <select class="contact-input" id="state" name="user_state">
+                            <option value="0">Choose State</option>
                             <option value="Alabama">AL</option>
                             <option value="Alaska">AK</option>
                             <option value="Arizona">AZ</option>
@@ -126,11 +129,11 @@
                             <option value="Wyoming">WY</option>
                         </select>
                     </p>
-                    <p class="zipcode">
+                    <p class="contact-input flex">
                         <label for="zipcode">
                             Zip
-                        </label><br>
-                        <input type="number" id="zipcode" name="user_zip" class="zip">
+                        </label>
+                        <input class="zip placeholder" type="number" id="zipcode" name="user_zip" placeholder="Zip Code">
                     </p>
                 </div>
                 <div class="newsletter">
@@ -152,14 +155,13 @@
                     <p>
                         <input type="radio" id="plain_text" value="plain_text" name="newsletter_radio"><label class="radio-checkbox" for="plain_text">Plain text</label>
                     </p>
-                    <p>
+                    <p class="no-margin">
                         <label class="textarea-label" for="topics">Other topics you'd like to hear about</label><br>
-                        <textarea name="topics" id="topics" cols="30" rows="5"></textarea>
+                        <textarea class="placeholder" name="topics" id="topics" cols="30" rows="5" placeholder="Message"></textarea>
                     </p>
-                    
                 </div>
             </form>
-            <p>
+            <p class="no-margin">
                 <button type="button">Sign Up</button>
             </p>
             
