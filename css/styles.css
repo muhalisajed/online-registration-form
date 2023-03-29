@@ -59,12 +59,24 @@ h3 {
 .sub-heading p {
     font-weight: 100;
 }
+
+fieldset {
+    border: none;
+}
+
+hr {
+    border: 1px solid var(--dark-color);
+    margin: 0;
+}
 /* Contact Information */
-.contact-info {
-    border-top: .125em solid var(--dark-color);
-    border-bottom: .125em solid var(--dark-color);
-    padding: 1.5em 1em;
+.contact-bg {
     background-color: var(--main-color);
+}
+
+.contact-info {
+    border-bottom: .125em solid var(--dark-color);
+    padding: 2em 1em 1.5em;
+    
 }
 .contact-info p > label {
     display: block;
@@ -79,6 +91,7 @@ h3 {
     border-radius: 5px;
     background-color: var(--input-color);
 }
+
 p > input.zip {
     width: 40%;
 }
@@ -88,14 +101,7 @@ p > input.zip {
     padding: .25em;
     margin: .25em;
 }
-.placeholder::placeholder {
-    text-align: left;
-}
 /* Newsletter */
-.newsletter h3 {
-    margin: 1em 0;
-}
-
 textarea {
     margin: 2em 0;
     background-color: var(--input-color);
@@ -110,14 +116,18 @@ input[type="number"]:focus,
 select:focus,
 textarea:focus {
     background-color: var(--focus-color);
-   -webkit-transition: 0.5s;
-   transition: 0.5s;
-   outline: none;
+   -webkit-transition: .1s;
+   transition: .1s;
+   outline: 2px solid var(--dark-color);
+}
+
+.newsletter-legend {
+    margin-bottom: 1em;
 }
 /* Button */
 button {
     background-color: var(--main-color);
-    padding: 1em 5em;
+    padding: 1em 3em;
     border: none;
     border-radius: .25em;
     color: var(--light-font-color);
@@ -144,6 +154,12 @@ footer p {
     margin: 0;
 }
 
+.legend {
+    display: block;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 600px;
@@ -164,6 +180,7 @@ footer p {
     }
 
     p > input.zip {
-        margin-right: 11.68em;
+        margin-right: 13.3em;
+        width: 35%;
     }
 }
